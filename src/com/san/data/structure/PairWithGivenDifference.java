@@ -14,7 +14,7 @@ public class PairWithGivenDifference {
 	public static int[] difference(int[] arr, int n)
 	{
 		
-				//Output: Pair Found: (2, 80)
+	
 
 	    HashMap<Integer,Integer> map = new HashMap();
 	    for(int i =0;i<arr.length;i++)
@@ -26,6 +26,7 @@ public class PairWithGivenDifference {
 	    		return new int[] {map.get(comp),arr[i]};
 	    	}
 	    	map.put(arr[i],i);
+	    	
 	    }
 	  return null;	
 	}
